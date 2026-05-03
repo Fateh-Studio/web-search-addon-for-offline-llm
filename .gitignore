@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+
+# Logs and temp
+*.log
+*.tmp
+llama_output.txt
+loading.html
+
+# Model files (too large for GitHub)
+*.gguf
+*.bin
+
+# ChromeDriver
+chromedriver.exe

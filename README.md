@@ -1,3 +1,14 @@
+<div dir="rtl" align="center">
+  
+# [🇮🇷 فارسی](#فارسی) &nbsp;&nbsp;|&nbsp;&nbsp; [🇬🇧 English](#english)
+
+</div>
+
+---
+
+<span id="فارسی"></span>
+<div dir="rtl">
+
 # پروژه RAG آفلاین با جستجوی وب
 
 ## این پروژه چیکار میکنه؟
@@ -82,7 +93,12 @@ Research assistant. Create ONE short Persian query (max 4 words) using the most 
 
 ساخته شده توسط FATEH-STUDIO
 
-################################################################################
+</div>
+
+---
+
+<span id="english"></span>
+<div dir="ltr">
 
 # Offline RAG with Web Search
 
@@ -90,7 +106,7 @@ Research assistant. Create ONE short Persian query (max 4 words) using the most 
 
 It connects llama.cpp to the internet. Any model you have can search the web and use up-to-date information.
 
-The main benefit is when international internet is cut off. Google and most search engines won't work, but this project uses an Iranian search engine called **Zarebin**. Zarebin works great during internet outages in Iran and finds more accessible, relevant Persian sites than other local search engines like Bertina, Gerdoo, and others.
+The main benefit is when international internet is cut off. Google Chrome and most search engines won't work, but this project uses an Iranian search engine called **Zarebin**. Zarebin works great during internet outages in Iran and finds more accessible, relevant Persian sites than other local search engines like Bertina, Gerdoo, and others.
 
 You ask a question, the project searches the web, extracts text from pages, and combines it with your model's knowledge (the same model you run in llama.cpp) to give an accurate answer. You can even ask it in one prompt to "search the web about X" and "answer Y from your own knowledge" — it does exactly that.
 
@@ -167,3 +183,5 @@ In llama.bat, there's a very long line starting with set "LLAMA_CMD=. Inside, yo
 ## Good luck!
 
 Created by FATEH-STUDIO
+
+</div>

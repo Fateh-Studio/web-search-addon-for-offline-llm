@@ -1,6 +1,6 @@
 <div dir="rtl" align="center">
   
-# [🇮🇷 فارسی](#فارسی) &nbsp;&nbsp;|&nbsp;&nbsp; [🇬🇧 English](#english)
+# [🇬🇧 English](#english) &nbsp;&nbsp;|&nbsp;&nbsp; [🇮🇷 فارسی](#فارسی)
 
 </div>
 

@@ -94,13 +94,8 @@ Research assistant. Create ONE short Persian query (max 4 words) using the most 
 
 ## راه‌اندازی در LM Studio (اگه ازش استفاده میکنی)
 
-من روی LM Studio تست نکردم، ولی طبق مستندات باید کار بده. برای راه‌اندازی:
-
-1. فایل `mcp_server.py` رو اجرا کن (با دوبار کلیک یا از خط فرمان)
-2. توی LM Studio، به بخش MCP Server برو
-3. آدرس رو به این شکل اضافه کن: `http://127.0.0.1:8765/sse`
-4. حتماً مقدار `timeout` رو به `300000` (یا بیشتر) تنظیم کن
-5. LM Studio رو ریستارت کن
+من روی LM Studio تست نکردم، ولی طبق مستندات باید کار بده.
+فقط مقدار timeout رو به 300000 (یا بیشتر) تنظیم کن.
 
 ---
 
@@ -200,13 +195,8 @@ In llama.bat, there's a very long line starting with set "LLAMA_CMD=. Inside, yo
 
 ## LM Studio Setup (if you use it)
 
-I haven't tested on LM Studio myself, but according to documentation, it should work. To set it up:
-
-1. Run `mcp_server.py` (double-click or from command line)
-2. In LM Studio, go to MCP Server section
-3. Add the address: `http://127.0.0.1:8765/sse`
-4. Make sure to set `timeout` to `300000` (or higher)
-5. Restart LM Studio
+I haven't tested on LM Studio myself, but according to documentation, it should work.
+Just set the timeout value to 300000 (or higher).
 
 ---
 

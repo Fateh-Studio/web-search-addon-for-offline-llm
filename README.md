@@ -80,12 +80,27 @@ Research assistant. Create ONE short Persian query (max 4 words) using the most 
 
 ## تنظیمات سخت‌افزاری (برای کامپیوتر خودت)
 
+> **تست شده روی:** Windows x64 (CPU) با llama.cpp.  
+> اگر سیستم یا سخت‌افزار متفاوتی دارید (مثل GPU، ARM، یا نسخه‌های دیگر)، باید فایل اجرایی `llama.cpp` متناسب با سیستم خود را از گیت‌هاب دانلود کنید و پارامترهای زیر را برای سیستم خودتان بهینه کنید.
+
 توی فایل llama.bat یه خط خیلی بلند هست که با set "LLAMA_CMD= شروع میشه. اونجا یه سری عدد و پارامتر هست که میتونی برای کامپیوتر خودت عوض کنی:
 
 - t 4 : یعنی چند تا نخ (thread) از CPU استفاده بشه. اگه CPU قوی داری، این عدد رو زیاد کن مثلاً بذار t 8
 - cpu-moe : این فقط مال CPU هست. اگه کارت گرافیک (GPU) داری، این بخش رو پاک کن
 - reasoning off : این واسه مدل‌های مخصوص استدلال مثل QwQ هست. اگه از اون مدلا داری، بذارش on
 - timeout 300000 : یعنی مدل چند میلی‌ثانیه صبر کنه تا جواب بده. اگه مدل دیر جواب میده، این عدد رو زیاد کن مثلاً بذار 600000. البته همین عدد خوبه دستش نزن
+
+---
+
+## راه‌اندازی در LM Studio (اگه ازش استفاده میکنی)
+
+من روی LM Studio تست نکردم، ولی طبق مستندات باید کار بده. برای راه‌اندازی:
+
+1. فایل `mcp_server.py` رو اجرا کن (با دوبار کلیک یا از خط فرمان)
+2. توی LM Studio، به بخش MCP Server برو
+3. آدرس رو به این شکل اضافه کن: `http://127.0.0.1:8765/sse`
+4. حتماً مقدار `timeout` رو به `300000` (یا بیشتر) تنظیم کن
+5. LM Studio رو ریستارت کن
 
 ---
 
@@ -171,12 +186,27 @@ Below it, check "Show system message in conversations" so this Message Prompt ap
 
 ## Hardware settings (for your computer)
 
+> **Tested on:** Windows x64 (CPU) with llama.cpp.  
+> If you have different hardware (GPU, ARM, or other builds), download the appropriate `llama.cpp` executable from GitHub and optimize the parameters below for your system.
+
 In llama.bat, there's a very long line starting with set "LLAMA_CMD=. Inside, you can adjust these parameters for your system:
 
 - t 4 : Number of CPU threads. If you have a strong CPU, increase it (e.g., t 8)
 - cpu-moe : CPU only. If you have a GPU, remove this part
 - reasoning off : Reasoning mode. If you use QwQ models, change it to on
 - timeout 300000 : Timeout in milliseconds. If the model responds slowly, increase it (e.g., 600000) — but the current value is fine, leave it alone
+
+---
+
+## LM Studio Setup (if you use it)
+
+I haven't tested on LM Studio myself, but according to documentation, it should work. To set it up:
+
+1. Run `mcp_server.py` (double-click or from command line)
+2. In LM Studio, go to MCP Server section
+3. Add the address: `http://127.0.0.1:8765/sse`
+4. Make sure to set `timeout` to `300000` (or higher)
+5. Restart LM Studio
 
 ---
 

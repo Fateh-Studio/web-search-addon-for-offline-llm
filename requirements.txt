@@ -1,0 +1,18 @@
+# ============================================================
+# Python packages required for this project
+# ============================================================
+
+# For async HTTP requests to search engines and websites
+aiohttp
+
+# For running MCP server (connects llama.cpp to search tools)
+fastapi
+
+# For running FastAPI server
+uvicorn
+
+# For controlling Chrome browser (web automation)
+selenium
+
+# For extracting clean text from web pages
+trafilatura
